@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.google.com/specimen/Inter');
+}
+
+body {
+    font-family: 'Inter';
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.person-pic {
+    border-radius: 10px;
+    margin-top: 63px;
+    box-shadow: 0 10px 76px hsl(240, 18%, 77%);
+}
+
+.testmonial-text {
+    z-index: 1;
+}
+
+.pattern-pic {
+    right: -51px;
+    z-index: -1;
+    top: 0;
+    position: absolute;
+}
+
+.slider-controls {
+    position: relative;
+    bottom: 26px;
+    left: 55px;
+
+    button {
+        background-color: #fff;
+        width: 10%;
+        padding: 18px;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+            background-color: hsl(240, 66%, 94%);
+            transition: background-color 1s ease-out;
+        }
+
+        &:focus {
+            border: 3px solid #babacf;
+        }
+
+        &:first-child {
+            position: relative;
+            left: 4px;
+            border-radius: 30px 0px 0px 30px;
+        }
+
+        &:last-child {
+            border-radius: 0 30px 30px 0;
+        }
+
+
+    }
+
+
+}
+
+.text {
+    font-weight: 300;
+    font-size: 32px;
+    width: 120%;
+    margin-top: 135px;
+    margin-left: 11px;
+}
+
+.qoutes {
+    left: 117px;
+    z-index: -1;
+    position: relative;
+    top: 170px;
+}
+
+.signature {
+    font-size: 20px;
+    margin: 25px 12px;
+    font-weight: 700;
+
+    span {
+        font-weight: 500;
+        color: hsl(240, 18%, 77%);
+        margin-left: 12px;
+
+    }
+}
+
+.one1 {
+    display: none
+}
+
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
