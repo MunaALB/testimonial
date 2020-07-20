@@ -19,11 +19,11 @@ $(document).ready(function () {
     var slider = '';
     $.each(json.testimonial, function (key, val) {
         slider += ' <div class="first row one' + key + '">'
-        slider += '<div class="testimonial-text col-lg-6 "> <img class = "qoutes" src = "images/pattern-quotes.svg">'
+        slider += '<div class="testimonial-text col-lg-6 "> <img class = "qoutes" src = "images/pattern-quotes.svg" alt="pattern-quotes">'
         slider += '<p  class = "text" >' + val.description + '</p>'
         slider += '<p class = "signature">' + val.signature + ' <span class = "position">' + val.position + ' </span></p> </div>'
-        slider += '<div class="testimonial-pic col-lg-6">  <img class="person-pic" src="' + val.img + ' "> <img class="pattern-pic" src="images/pattern-bg.svg">'
-        slider += ' <div class="slider-controls"> <button class="prev"><img src="images/icon-prev.svg"></button>  <button class="next"><img src="images/icon-next.svg"></button> '
+        slider += '<div class="testimonial-pic col-lg-6">  <img class="person-pic" src="' + val.img + ' " alt="person-image"> <img class="pattern-pic" src="images/pattern-bg.svg" alt="pattern-img>'
+        slider += ' <div class="slider-controls"> <button class="prev"><img src="images/icon-prev.svg" alt="next-icon"></button>  <button class="next"><img src="images/icon-next.svg" alt="next-icon"></button> '
         slider += '</div> </div>  </div>'
 
 
