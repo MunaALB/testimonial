@@ -4,20 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>design bootcamp</title>
+    <title>testimonial</title>
     <link href="style/bootstrap.css" rel='stylesheet' type='text/css'>
     <link href="style/style.css" rel='stylesheet' type='text/css'>
 
 </head>
 
 <body>
-    <div class="container">
-
-
+    <div class="carousel">
+        <div class="carousel__items-container">
+            <div class="carousel__items">
+                <div class="carousel__slide current-slide">
+                    <div class="row">
+                        <div class="testimonial-text col-lg-6 ">
+                            <img class="qoutes" src="images/pattern-quotes.svg">
+                            <p class="text">"I've been interested in coding for a while
+                                <br>but never taken the jump, until now.I
+                                <br>couldn't recommend this course enough.
+                                <br>I'm now in the job of my dreams and so
+                                <br> excited about the future."</p>
+                            <p class="signature">Tanya Sinclair<span class="position">UX Engineer</span></p>
+                        </div>
+                        <div class="testimonial-pic col-lg-6">
+                            <img class="person-pic" src="images/image-tanya.jpg">
+                            <img class="pattern-pic" src="images/pattern-bg.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__slide">
+                    <div class="row">
+                        <div class="testimonial-text col-lg-6 ">
+                            <img class="qoutes" src="images/pattern-quotes.svg">
+                            <p class="text">"I've been interested in coding for a while
+                                <br>but never taken the jump, until now.I
+                                <br>couldn't recommend this course enough.
+                                <br>I'm now in the job of my dreams and so
+                                <br> excited about the future."</p>
+                            <p class="signature">Tanya Sinclair<span class="position">UX Engineer</span></p>
+                        </div>
+                        <div class="testimonial-pic col-lg-6">
+                            <img class="person-pic" src="images/image-john.jpg">
+                            <img class="pattern-pic" src="images/pattern-bg.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="carousel__button--left"><img src="images/icon-prev.svg"></button>
+            <button class=" carousel__button--right"><img src="images/icon-next.svg"></button>
+        </div>
     </div>
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

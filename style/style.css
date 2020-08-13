@@ -7,8 +7,38 @@ body {
   font-family: 'Inter';
 }
 
-.container {
+.carousel {
+  width: 100%;
+  height: 800px;
   padding-top: 30px;
+}
+
+.carousel__items-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel__items {
+  padding: 0 12%;
+  position: relative;
+  height: 100%;
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.testimonial-text {
+  z-index: 1;
+  padding-left: 8%;
 }
 
 .person-pic {
@@ -18,21 +48,19 @@ body {
           box-shadow: 0 10px 76px #babacf;
 }
 
-.testmonial-text {
-  z-index: 1;
-}
-
 .pattern-pic {
-  right: -51px;
+  left: -52px;
   z-index: -1;
   top: 0;
   position: absolute;
 }
 
 .slider-controls {
+  width: 40%;
+  float: right;
   position: relative;
-  bottom: 26px;
-  left: 55px;
+  bottom: 200px;
+  left: -6%;
 }
 
 .slider-controls button {
@@ -88,27 +116,5 @@ body {
   font-weight: 500;
   color: #babacf;
   margin-left: 12px;
-}
-
-.one1 {
-  display: none;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 /*# sourceMappingURL=style.css.map */

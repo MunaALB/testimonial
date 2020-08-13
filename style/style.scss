@@ -7,8 +7,38 @@ body {
     font-family: 'Inter';
 }
 
-.container {
+.carousel {
+    width: 100%;
+    height: 800px;
     padding-top: 30px;
+
+    &__items-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &__items {
+        padding: 0 12%;
+        position: relative;
+        height: 100%;
+        transition: transform 250ms ease-in;
+
+    }
+
+    &__slide {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        // padding: 0 50px;
+        width: 100%;
+
+    }
+}
+
+.testimonial-text {
+    z-index: 1;
+    padding-left: 8%;
 }
 
 .person-pic {
@@ -17,21 +47,21 @@ body {
     box-shadow: 0 10px 76px hsl(240, 18%, 77%);
 }
 
-.testmonial-text {
-    z-index: 1;
-}
 
 .pattern-pic {
-    right: -51px;
+    left: -52px;
     z-index: -1;
     top: 0;
     position: absolute;
 }
 
+
 .slider-controls {
+    width: 40%;
+    float: right;
     position: relative;
-    bottom: 26px;
-    left: 55px;
+    bottom: 200px;
+    left: -6%;
 
     button {
         background-color: #fff;
@@ -90,20 +120,5 @@ body {
         color: hsl(240, 18%, 77%);
         margin-left: 12px;
 
-    }
-}
-
-.one1 {
-    display: none
-}
-
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
     }
 }
